@@ -83,9 +83,9 @@ class About extends Me
     }
 }
 ```
-
+<!--
 <p float="left">
   <img width="425" src="https://github-readme-stats.vercel.app/api/wakatime?username=rikp777&theme=dark&show_icons=true&layout=compact" />
   <img width="425" src="https://github-readme-stats.vercel.app/api?username=rikp777&theme=dark&show_icons=true" />
 </p>
-
+-->
