@@ -14,3 +14,78 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<img src="https://komarev.com/ghpvc/?username=rikp777&label=Profile%20views&color=green&style=flat" alt="rikp777" />
+
+``` Java 
+namespace RikPeeters;
+
+//👨
+class About extends Me
+{
+    // 💼
+    public function getCurrentWorkplace(): array
+    {
+        return [
+            'workplace' => [
+                'company' => 'Limax',
+                'position' => 'Software-engineer'         
+            ]
+        ];
+    }
+
+    // 👨‍💻
+    public function getCodeKnowledge(): array
+    {
+        return [
+            Php::class,
+            Javascript::class,
+            Java::class,
+            Python::class,
+            C#::class
+        ];
+    }
+    
+    // ⚙️
+    public function getToolsKnowledge(): array
+    {
+        return [
+            SpringBoot::class,
+            Laravel::class,
+            Node::class,
+            Tailwind::class,
+            Vuejs::class,
+            Nuxtjs::class,
+            Docker::class,
+            Neovim::class
+        ];
+    }
+    
+    // 🏗️
+    public function getArchitecture(): array 
+    {
+      return ['microservices', 'event-driven', 'design system pattern']
+    }
+
+    // 🧭
+    public function getFutureGoal(): array
+    {
+        return [
+          'To contribute to open source.',
+          'Creating my own fitness app to keep motivated and fit'
+        ]
+    }
+    
+    // 🌐
+    public function getMoreAboutMe() : string 
+    {
+      return 'rikp777.github.com
+    }
+}
+```
+
+<p float="left">
+  <img width="425" src="https://github-readme-stats.vercel.app/api/wakatime?username=rikp777&theme=dark&show_icons=true&layout=compact" />
+  <img width="425" src="https://github-readme-stats.vercel.app/api?username=rikp777&theme=dark&show_icons=true" />
+</p>
+
