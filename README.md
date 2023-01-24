@@ -24,64 +24,74 @@ namespace RikPeeters;
 class About extends Me
 {
     // 💼
-    public function getCurrentWorkplace(): array
+    public Work getCurrentWorkplace(): array
     {
-        return [
-            'workplace' => [
-                'company' => 'Limax',
-                'position' => 'Software-engineer'         
-            ]
-        ];
+        return Work.builder()
+                    .name("Limax")
+                    .position("Software-engineer")
+                    .build()
     }
 
     // 👨‍💻
-    public function getCodeKnowledge(): array
+    public List<CodeKnowledge> getCodeKnowledge(): array
     {
-        return [
-            Php::class,
-            Javascript::class,
-            Java::class,
-            Python::class,
-            C#::class
-        ];
+        return List.of(
+            Php.class,
+            Javascript.class,
+            Java.class,
+            Python.class,
+            C#.class
+        );
     }
     
     // ⚙️
-    public function getToolsKnowledge(): array
-    {
-        return [
-            SpringBoot::class,
-            Laravel::class,
-            Node::class,
-            Tailwind::class,
-            Vuejs::class,
-            Nuxtjs::class,
-            Docker::class,
-            Neovim::class
-        ];
+    public List<ToolKnowledge> getToolsKnowledge() {
+        return List.of(
+            SpringBoot.class,
+            Laravel.class,
+            Node.class,
+            Tailwind.class,
+            Vuejs.class,
+            Nuxtjs.class,
+            Docker.class,
+            Neovim.class
+        );
     }
     
     // 🏗️
-    public function getArchitecture(): array 
-    {
-      return ['microservices', 'event-driven', 'design system pattern']
+    public List<String> getArchitecture() {
+         return List.of(
+            'microservices', 
+            'event-driven', 
+            'design system pattern'
+         )
     }
 
     // 🧭
-    public function getFutureGoal(): array
-    {
-        return [
-          'To contribute to open source.',
-          'Creating my own fitness app to keep motivated and fit'
-        ]
+    public List<String> getFutureGoal() {
+        return List.of(
+           'To contribute to open source',
+           'Creating my own fitness app to keep motivated and fit'
+        )
     }
     
     // 🌐
-    public function getMoreAboutMe() : string 
-    {
-      return 'rikp777.github.com
+    public Link getMoreAboutMe() {
+      return Link.builder()
+                 .name("Portfolio")
+                 .url("rikp777.github.io")
+                 .build()
     }
-}
+    
+    // 📚
+    public List getProjectIAmWorkingOn() {
+        return List.of(
+            Link.builder()
+                .name("RP-Flowcontrol")
+                .url("rikp777.github.io/RP-Flowcontrol")
+                .build()
+        )
+    }
 ```
 <!--
 <p float="left">
