@@ -1,101 +1,25 @@
-### Hi there 👋
-
-<!--
-**rikp777/rikp777** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<img src="https://komarev.com/ghpvc/?username=rikp777&label=Profile%20views&color=green&style=flat" alt="rikp777" />
-
-``` Java 
-namespace RikPeeters;
-
-//👨
-class About extends Me
+namespace RikPeeters
 {
-    // 💼
-    public Work getCurrentWorkplace(): array
+    class About extends Me
     {
-        return Work.builder()
-                    .name("Limax")
-                    .position("Software-engineer")
-                    .build()
-    }
+        public string Name => "Rik Peeters";
+        public string Role => "Software Engineer at Limax";
+        public string[] Languages => new string[] { "PHP", "Javascript", "Java", "Python", "C#" };
+        public string[] Tools => new string[] { "SpringBoot", "Laravel", "Node", "Tailwind", "Vuejs", "Nuxtjs", "Docker", "Neovim" };
+        public string[] Architectures => new string[] { "Microservices", "Event-driven", "Design System Pattern" };
+        public string[] Goals => new string[] { "Contribute to open source projects", "Create my own fitness app to stay motivated and fit" };
+        public string Portfolio => "rikp777.github.io";
+        public string CurrentProject => "rikp777.github.io/RP-Flowcontrol";
 
-    // 👨‍💻
-    public List<CodeKnowledge> getCodeKnowledge(): array
-    {
-        return List.of(
-            Php.class,
-            Javascript.class,
-            Java.class,
-            Python.class,
-            C#.class
-        );
+        public override string ToString()
+        {
+            return $"👋 Hi there, I'm {Name}!\n" +
+                   $"👨‍💻 Currently, I'm working as {Role}.\n" +
+                   $"💻 I'm proficient in {string.Join(", ", Languages)} and familiar with tools like {string.Join(", ", Tools)}.\n" +
+                   $"🏗️ I enjoy working with {string.Join(", ", Architectures)} architectures.\n" +
+                   $"🌱 My future goals are {string.Join(" and ", Goals)}.\n" +
+                   $"📫 You can see more of my work on my portfolio: {Portfolio}.\n" +
+                   $"🔭 I'm currently working on my project: {CurrentProject}.";
+        }
     }
-    
-    // ⚙️
-    public List<ToolKnowledge> getToolsKnowledge() {
-        return List.of(
-            SpringBoot.class,
-            Laravel.class,
-            Node.class,
-            Tailwind.class,
-            Vuejs.class,
-            Nuxtjs.class,
-            Docker.class,
-            Neovim.class
-        );
-    }
-    
-    // 🏗️
-    public List<String> getArchitecture() {
-         return List.of(
-            'microservices', 
-            'event-driven', 
-            'design system pattern'
-         )
-    }
-
-    // 🧭
-    public List<String> getFutureGoal() {
-        return List.of(
-           'To contribute to open source',
-           'Creating my own fitness app to keep motivated and fit'
-        )
-    }
-    
-    // 🌐
-    public Link getMoreAboutMe() {
-      return Link.builder()
-                 .name("Portfolio")
-                 .url("rikp777.github.io")
-                 .build()
-    }
-    
-    // 📚
-    public List getProjectIAmWorkingOn() {
-        return List.of(
-            Link.builder()
-                .name("RP-Flowcontrol")
-                .url("rikp777.github.io/RP-Flowcontrol")
-                .build()
-        )
-    }
-```
-<!--
-<p float="left">
-  <img width="425" src="https://github-readme-stats.vercel.app/api/wakatime?username=rikp777&theme=dark&show_icons=true&layout=compact" />
-  <img width="425" src="https://github-readme-stats.vercel.app/api?username=rikp777&theme=dark&show_icons=true" />
-</p>
--->
+}
